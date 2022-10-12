@@ -23,5 +23,6 @@ public class StrConsumerListener {
     )
     public void history(final String message) {
         log.info("HISTORY:: Receive message: {}", message);
+        throw new IllegalArgumentException("Invalid");
     }
 }
