@@ -4,6 +4,7 @@ import static com.danilosilva.strconsumer.support.Constant.STR_TOPIC_NAME;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.kafka.annotation.TopicPartition;
 import org.springframework.stereotype.Component;
 
 @Slf4j
@@ -13,6 +14,9 @@ public class StrConsumerListener {
     @KafkaListener(
         groupId = "group-1",
         topics = STR_TOPIC_NAME,
+        topicPartitions = {
+            @TopicPartition(topic = STR_TOPIC_NAME, partitions = {"0"})
+        },
         containerFactory = "strContainerFactory"
     )
     public void listener(final String message) {
@@ -22,6 +26,9 @@ public class StrConsumerListener {
     @KafkaListener(
         groupId = "group-1",
         topics = STR_TOPIC_NAME,
+        topicPartitions = {
+            @TopicPartition(topic = STR_TOPIC_NAME, partitions = {"1"})
+        },
         containerFactory = "strContainerFactory"
     )
     public void log(final String message) {
