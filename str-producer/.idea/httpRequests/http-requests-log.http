@@ -1,0 +1,100 @@
+POST http://localhost:8000/string-producer
+Content-Type: application/json
+
+{
+   "message": "Testing send message: 05"
+}
+
+###
+
+POST http://localhost:8000/string-producer
+Content-Type: application/json
+
+{
+   "message": "Testing send message: 04"
+}
+
+###
+
+POST http://localhost:8000/string-producer
+Content-Type: application/json
+
+{
+   "message": "Testing send message: 03"
+}
+
+###
+
+POST http://localhost:8000/string-producer
+Content-Type: application/json
+
+{
+   "message": "Testing send message: 02"
+}
+
+###
+
+POST http://localhost:8000/string-producer
+Content-Type: application/json
+
+{
+   "message": "Testing send message: 01"
+}
+
+###
+
+POST http://localhost:8000/string-producer
+Content-Type: application/json
+
+{
+   "message": "Testing send message: 01"
+}
+
+###
+
+POST http://localhost:8000/string-producer
+Content-Type: application/json
+
+{
+   "message": "Testing send message: 01"
+}
+
+###
+
+POST http://localhost:8000/string-producer
+Content-Type: application/json
+
+{
+   "message": "Testing send message: 03"
+}
+
+###
+
+POST http://localhost:8000/string-producer
+Content-Type: application/json
+
+{
+   "message": "Testing send message: 02"
+}
+
+###
+
+POST http://localhost:8000/string-producer
+Content-Type: application/json
+
+{
+   "message": "Testing send message: 01"
+}
+
+###
+
+POST http://localhost:8000/string-producer
+Content-Type: application/json
+{:
+   "message": "Testing send message: 01"
+}:
+
+<> 2022-09-29T160526.400.html
+
+###
+
