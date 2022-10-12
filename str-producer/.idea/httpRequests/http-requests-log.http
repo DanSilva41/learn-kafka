@@ -2,6 +2,24 @@ POST http://localhost:8000/string-producer
 Content-Type: application/json
 
 {
+   "message": "Testing send message: 10"
+}
+
+###
+
+POST http://localhost:8000/string-producer
+Content-Type: application/json
+
+{
+   "message": "Testing send message: 09"
+}
+
+###
+
+POST http://localhost:8000/string-producer
+Content-Type: application/json
+
+{
    "message": "Testing send message: 08"
 }
 
