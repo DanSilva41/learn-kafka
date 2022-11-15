@@ -16,7 +16,7 @@ public interface PaymentController {
 }
 
 @RestController
-@RequestMapping("/payments")
+@RequestMapping("/payment")
 @RequiredArgsConstructor
 class PaymentControllerImpl implements PaymentController {
 

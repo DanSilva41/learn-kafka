@@ -1,5 +1,7 @@
 package com.danilosilva.paymentservice.config;
 
+import static com.danilosilva.paymentservice.support.Constant.PAYMENT_TOPIC_NAME;
+
 import java.util.HashMap;
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.admin.AdminClientConfig;
@@ -25,7 +27,7 @@ public class KafkaAdminConfig {
     @Bean
     public KafkaAdmin.NewTopics newTopics() {
         return new KafkaAdmin.NewTopics(
-            TopicBuilder.name("payment-topic").partitions(1).build()
+            TopicBuilder.name(PAYMENT_TOPIC_NAME).partitions(1).build()
         );
     }
 }
